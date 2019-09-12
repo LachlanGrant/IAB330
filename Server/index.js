@@ -26,6 +26,6 @@ app.use(body.json());
 
 require('./routes/routes')(app);
 
-app.listen(8009, () => {
+app.listen(8080, () => {
 	console.log("Running");
 });
