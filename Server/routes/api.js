@@ -13,7 +13,7 @@ module.exports = (function () {
 	app.use('/reviews', ReviewRoutes);
 
 	app.get('/test', multer().none(), (req, res) => {
-		res.json({ date: new Date(), requestBody: req.body, user: req.user });
+		res.json({ date: new Date(), requestBody: req.body, user: req.user, params: req.params, baseURL: req.baseUrl });
 	});
 
 	app.post('/signup', multer().none(), (req, res) => {
