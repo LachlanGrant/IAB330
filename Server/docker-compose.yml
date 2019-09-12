@@ -14,9 +14,10 @@ services:
     volumes:
       - ./:/home/node/app
     environment:
-      VIRTUAL_HOST: iab330.rbvea.co
-      LETSENCRYPT_HOST: iab330.rbvea.co
+      VIRTUAL_HOST: "iab330.rbvea.co"
+      VIRTUAL_PORT: 8080
+      LETSENCRYPT_HOST: "iab330.rbvea.co"
     ports:
-      - 8009:8009
+      - 7009:8080
     command: "npm start"
     # command: "node tasks/createData.js"
