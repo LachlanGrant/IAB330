@@ -2,6 +2,8 @@ version: "2"
 services:
   mongo:
     image: mongo
+    ports:
+      - 27017:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: examplePassword
@@ -11,6 +13,10 @@ services:
     working_dir: /home/node/app
     volumes:
       - ./:/home/node/app
+    environment:
+      VIRTUAL_HOST: iab330.rbvea.co
+      LETSENCRYPT_HOST: iab330.rbvea.co
     ports:
       - 8009:8009
     command: "npm start"
+    # command: "node tasks/createData.js"
