@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.iOS/GroupR.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.iOS/GroupR.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.iOS/GroupR.iOS.csproj",
+        "projectName": "GroupR.iOS",
+        "projectPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.iOS/GroupR.iOS.csproj",
+        "packagesPath": "/Users/lachlangrant/.nuget/packages/",
+        "outputPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/lachlangrant/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.778463, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

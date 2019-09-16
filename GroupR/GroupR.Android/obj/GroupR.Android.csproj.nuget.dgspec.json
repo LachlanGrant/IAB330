@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.Android/GroupR.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.Android/GroupR.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.Android/GroupR.Android.csproj",
+        "projectName": "GroupR.Android",
+        "projectPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.Android/GroupR.Android.csproj",
+        "packagesPath": "/Users/lachlangrant/.nuget/packages/",
+        "outputPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/lachlangrant/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.778463, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
