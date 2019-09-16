@@ -1,5 +1,5 @@
 {
-  "name": "Server",
+  "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "custom-env": "^1.0.2",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
+    "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "jwt-simple": "^0.5.6",
     "lodash": "^4.17.15",
