@@ -31,15 +31,10 @@ module.exports = (function () {
 	})
 
 	app.post('/create', auth.isLoggedIn, multer().none(), (req, res) => {
-		const { user, friendliness, workEthic, workQuality } = req.body;
-
-		if (user == req.user._id) {
-			res.json({ success: false, message: "You can't review yourself." });
-			return;
-		}
+		const { name, friendliness, workEthic, workQuality } = req.body;
 
 		let newReview = new ReviewModel({
-			user,
+			name,
 			friendliness,
 			workEthic,
 			workQuality,
