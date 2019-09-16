@@ -17,13 +17,7 @@ module.exports = (function () {
 
 	app.get('/', multer().none(), (req, res) => {
 		ReviewModel.find()
-			.populate('user')
-			.populate('creator')
 			.then((reviews) => {
-				reviews.forEach((r) => {
-					r.user.password = undefined;
-					r.creator.password = undefined;
-				});
 				res.json({ success: true, reviews });
 			}).catch((err) => {
 				res.json({ success: false, message: err.toString().replace("Error: ", "") });
