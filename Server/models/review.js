@@ -6,12 +6,6 @@ const reviewModel = new mongoose.Schema({
 		required: true,
 	},
 
-	creator: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'User',
-		required: true,
-	},
-
 	friendliness: {
 		type: Number,
 		required: true

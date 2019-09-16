@@ -15,7 +15,7 @@ module.exports = (function () {
 		});
 	});
 
-	app.get('/', auth.isLoggedIn, multer().none(), (req, res) => {
+	app.get('/', multer().none(), (req, res) => {
 		ReviewModel.find()
 			.populate('user')
 			.populate('creator')
@@ -30,7 +30,7 @@ module.exports = (function () {
 			});
 	})
 
-	app.post('/create', auth.isLoggedIn, multer().none(), (req, res) => {
+	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality } = req.body;
 
 		let newReview = new ReviewModel({
@@ -38,7 +38,6 @@ module.exports = (function () {
 			friendliness,
 			workEthic,
 			workQuality,
-			creator: req.user,
 		});
 
 		newReview.save().then(() => {
