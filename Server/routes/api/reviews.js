@@ -25,7 +25,7 @@ module.exports = (function () {
 	})
 
 	app.post('/create', multer().none(), (req, res) => {
-		const { name, friendliness, workEthic, workQuality, studentNumber } = req.body;
+		const { name, friendliness, workEthic, workQuality, studentNumber, subject } = req.body;
 
 		let newReview = new ReviewModel({
 			name,
@@ -33,6 +33,7 @@ module.exports = (function () {
 			workEthic,
 			workQuality,
 			studentNumber,
+			subject,
 		});
 
 		newReview.save().then(() => {

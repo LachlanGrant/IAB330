@@ -9,7 +9,11 @@ const reviewModel = new mongoose.Schema({
 	studentNumber: {
 		type: String,
 		required: true,
-		default: "N.A",
+	},
+
+	subject: {
+		type: String,
+		required: true,
 	},
 
 	friendliness: {
