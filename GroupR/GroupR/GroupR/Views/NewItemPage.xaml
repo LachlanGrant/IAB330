@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GroupR.Views.NewItemPage"
+             Title="Write Review">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Person Name" FontSize="Medium" />
+            <Entry Text="{Binding Item.name}" d:Text="Person Name" FontSize="Small" x:Name="name"/>
+            <Label Text="Student Number" FontSize="Medium" />
+            <Entry Text="{Binding Item.studentNumber}" d:Text="Student Number" FontSize="Small" x:Name="studentNumber"/>
+            <Label Text="Friendliness" FontSize="Medium" />
+            <Picker x:Name="friendlinessPicker" Title="Friendliness" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int16}">
+                        <x:Int16>1</x:Int16>
+                        <x:Int16>2</x:Int16>
+                        <x:Int16>3</x:Int16>
+                        <x:Int16>4</x:Int16>
+                        <x:Int16>5</x:Int16>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Work Ethic" FontSize="Medium" />
+            <Picker x:Name="workEthicPicker" Title="Work Ethic" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int16}">
+                        <x:Int16>1</x:Int16>
+                        <x:Int16>2</x:Int16>
+                        <x:Int16>3</x:Int16>
+                        <x:Int16>4</x:Int16>
+                        <x:Int16>5</x:Int16>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Work Quality" FontSize="Medium" />
+            <Picker x:Name="workQualityPicker" Title="Work Quality" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int16}">
+                        <x:Int16>1</x:Int16>
+                        <x:Int16>2</x:Int16>
+                        <x:Int16>3</x:Int16>
+                        <x:Int16>4</x:Int16>
+                        <x:Int16>5</x:Int16>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,17 @@
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.deps.json
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.dll
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.pdb
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.csprojAssemblyReference.cache
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.csproj.CoreCompileInputs.cache
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.AssemblyInfoInputs.cache
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.AssemblyInfo.cs
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.dll
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.pdb
+C:\Users\lachlangrant\source\repos\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\XamlC.stamp

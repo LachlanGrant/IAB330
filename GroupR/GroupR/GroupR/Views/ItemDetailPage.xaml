@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GroupR.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Name:" FontSize="Medium" />
+        <Label Text="{Binding Item.name}" d:Text="Review Name" FontSize="Small"/>
+        <Label Text="Student Number:" FontSize="Medium" />
+        <Label Text="{Binding Item.studentNumber}" d:Text="Student Number" FontSize="Small"/>
+        <Label Text="Friendliness:" FontSize="Medium" />
+        <Label Text="{Binding Item.friendliness}" d:Text="Friendliness" FontSize="Small"/>
+        <Label Text="Work Ethic:" FontSize="Medium" />
+        <Label Text="{Binding Item.workEthic}" d:Text="Work Ethic" FontSize="Small"/>
+        <Label Text="Friendliness:" FontSize="Medium" />
+        <Label Text="{Binding Item.workQuality}" d:Text="Work Quality" FontSize="Small"/>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,1 +1,7 @@
-Mobile/.vs
+*~
+.DS_Store
+GroupR/.vs
+GroupR/GroupR/GroupR.Android/bin
+GroupR/GroupR/GroupR.Android/obj
+GroupR/GroupR/GroupR.iOS/obj
+
