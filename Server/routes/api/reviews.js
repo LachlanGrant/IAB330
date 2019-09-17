@@ -25,6 +25,7 @@ module.exports = (function () {
 	})
 
 	app.post('/create', multer().none(), (req, res) => {
+		console.log({ body: req.body, type: typeof req.body });
 		const { name, friendliness, workEthic, workQuality } = req.body;
 
 		let newReview = new ReviewModel({
