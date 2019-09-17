@@ -12,6 +12,8 @@
         <Label Text="{Binding Item.name}" d:Text="Review Name" FontSize="Small"/>
         <Label Text="Student Number:" FontSize="Medium" />
         <Label Text="{Binding Item.studentNumber}" d:Text="Student Number" FontSize="Small"/>
+        <Label Text="Subject:" FontSize="Medium" />
+        <Label Text="{Binding Item.subject}" d:Text="Subject" FontSize="Small"/>
         <Label Text="Friendliness:" FontSize="Medium" />
         <Label Text="{Binding Item.friendliness}" d:Text="Friendliness" FontSize="Small"/>
         <Label Text="Work Ethic:" FontSize="Medium" />

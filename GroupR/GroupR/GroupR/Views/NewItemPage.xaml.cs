@@ -25,7 +25,8 @@ namespace GroupR.Views
                 workEthic = 1,
                 workQuality = 1,
                 name = "",
-                studentNumber = ""
+                studentNumber = "",
+                subject = ""
             };
 
             BindingContext = this;

@@ -15,7 +15,14 @@ namespace GroupR.Services
         {
             var client = new System.Net.Http.HttpClient();
 
-            var jsonData = new StringContent(JsonConvert.SerializeObject(new { name = item.name, workEthic = item.workEthic, workQuality = item.workQuality, friendliness = item.friendliness, studentNumber = item.studentNumber}), Encoding.UTF8, "application/json");
+            var jsonData = new StringContent(JsonConvert.SerializeObject(new {
+                name = item.name,
+                workEthic = item.workEthic,
+                workQuality = item.workQuality,
+                friendliness = item.friendliness,
+                studentNumber = item.studentNumber,
+                subject = item.subject,
+            }), Encoding.UTF8, "application/json");
 
             var response = await client.PostAsync("https://iab330.rbvea.co/api/reviews/create", jsonData);
 

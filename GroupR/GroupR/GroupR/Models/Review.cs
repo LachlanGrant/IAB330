@@ -12,6 +12,8 @@ namespace GroupR.Models
         public int workQuality { get; set; }
 
         public String studentNumber { get; set; }
+
+        public String subject { get; set; }
     }
 
     public class ReviewResponse

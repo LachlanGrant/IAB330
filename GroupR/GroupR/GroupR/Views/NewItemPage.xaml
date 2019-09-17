@@ -13,49 +13,53 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <Label Text="Person Name" FontSize="Medium" />
-            <Entry Text="{Binding Item.name}" d:Text="Person Name" FontSize="Small" x:Name="name"/>
-            <Label Text="Student Number" FontSize="Medium" />
-            <Entry Text="{Binding Item.studentNumber}" d:Text="Student Number" FontSize="Small" x:Name="studentNumber"/>
-            <Label Text="Friendliness" FontSize="Medium" />
-            <Picker x:Name="friendlinessPicker" Title="Friendliness" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:Int16}">
-                        <x:Int16>1</x:Int16>
-                        <x:Int16>2</x:Int16>
-                        <x:Int16>3</x:Int16>
-                        <x:Int16>4</x:Int16>
-                        <x:Int16>5</x:Int16>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <Label Text="Work Ethic" FontSize="Medium" />
-            <Picker x:Name="workEthicPicker" Title="Work Ethic" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:Int16}">
-                        <x:Int16>1</x:Int16>
-                        <x:Int16>2</x:Int16>
-                        <x:Int16>3</x:Int16>
-                        <x:Int16>4</x:Int16>
-                        <x:Int16>5</x:Int16>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <Label Text="Work Quality" FontSize="Medium" />
-            <Picker x:Name="workQualityPicker" Title="Work Quality" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:Int16}">
-                        <x:Int16>1</x:Int16>
-                        <x:Int16>2</x:Int16>
-                        <x:Int16>3</x:Int16>
-                        <x:Int16>4</x:Int16>
-                        <x:Int16>5</x:Int16>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <Label Text="Person Name" FontSize="Medium" />
+                <Entry Text="{Binding Item.name}" d:Text="Person Name" FontSize="Small" x:Name="name"/>
+                <Label Text="Student Number" FontSize="Medium" />
+                <Entry Text="{Binding Item.studentNumber}" d:Text="Student Number" FontSize="Small" x:Name="studentNumber"/>
+                <Label Text="Subject Code" FontSize="Medium" />
+                <Entry Text="{Binding Item.subject}" d:Text="Subject" FontSize="Small" x:Name="subject"/>
+                <Label Text="Friendliness" FontSize="Medium" />
+                <Picker x:Name="friendlinessPicker" Title="Friendliness" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int16}">
+                            <x:Int16>1</x:Int16>
+                            <x:Int16>2</x:Int16>
+                            <x:Int16>3</x:Int16>
+                            <x:Int16>4</x:Int16>
+                            <x:Int16>5</x:Int16>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Work Ethic" FontSize="Medium" />
+                <Picker x:Name="workEthicPicker" Title="Work Ethic" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int16}">
+                            <x:Int16>1</x:Int16>
+                            <x:Int16>2</x:Int16>
+                            <x:Int16>3</x:Int16>
+                            <x:Int16>4</x:Int16>
+                            <x:Int16>5</x:Int16>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Work Quality" FontSize="Medium" />
+                <Picker x:Name="workQualityPicker" Title="Work Quality" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int16}">
+                            <x:Int16>1</x:Int16>
+                            <x:Int16>2</x:Int16>
+                            <x:Int16>3</x:Int16>
+                            <x:Int16>4</x:Int16>
+                            <x:Int16>5</x:Int16>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
     
 </ContentPage>
