@@ -6,6 +6,12 @@ const reviewModel = new mongoose.Schema({
 		required: true,
 	},
 
+	studentNumber: {
+		type: String,
+		required: true,
+		default: "N.A",
+	},
+
 	friendliness: {
 		type: Number,
 		required: true

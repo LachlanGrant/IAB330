@@ -25,14 +25,14 @@ module.exports = (function () {
 	})
 
 	app.post('/create', multer().none(), (req, res) => {
-		console.log({ body: req.body, type: typeof req.body });
-		const { name, friendliness, workEthic, workQuality } = req.body;
+		const { name, friendliness, workEthic, workQuality, studentNumber } = req.body;
 
 		let newReview = new ReviewModel({
 			name,
 			friendliness,
 			workEthic,
 			workQuality,
+			studentNumber,
 		});
 
 		newReview.save().then(() => {
