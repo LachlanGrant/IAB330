@@ -32,12 +32,12 @@ module.exports = (function () {
 				{ 'name': { $regex: search } },
 				{ 'studentNumber': { $regex: search } },
 				{ 'subject': { $regex: search } }
-			])
-			.then((reviews) => {
-				res.json({ success: true, reviews });
-			})
-			.catch((err) => {
-				res.json({ success: false, message: err.toString() });
+			]).exec((err, results) => {
+				if (err) {
+					res.json({ success: false, message: err.toString() });
+				} else {
+					res.json({ success: true, reviews: results });
+				}
 			});
 	});
 
