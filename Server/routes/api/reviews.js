@@ -22,7 +22,21 @@ module.exports = (function () {
 			}).catch((err) => {
 				res.json({ success: false, message: err.toString().replace("Error: ", "") });
 			});
-	})
+	});
+
+	app.get('/search', multer().none(), (req, res) => {
+		ReviewModel.find({
+			name: { $regex: req.body.search, $options: 'i' },
+			studentNumber: { $regex: req.body.search, $options: 'i' },
+			subject: { $regex: req.body.search, $options: 'i' }
+		})
+			.then((reviews) => {
+				res.json({ success: true, reviews });
+			})
+			.catch((err) => {
+				res.json({ success: false, message: err.toString() });
+			});
+	});
 
 	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject } = req.body;
