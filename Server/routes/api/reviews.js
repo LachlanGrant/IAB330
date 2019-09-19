@@ -25,22 +25,14 @@ module.exports = (function () {
 	});
 
 	app.get('/search', multer().none(), (req, res) => {
-		const { name, studentNumber, subject } = req.body;
-		let query = {};
+		const { search } = req.body;
 
-		if (name !== null && name !== undefined) {
-			query.name = { $regex: name, $options: 'i' }
-		}
-
-		if (studentNumber !== null && studentNumber !== undefined) {
-			query.studentNumber = { $regex: studentNumber, $options: 'i' };
-		}
-
-		if (subject !== null && subject !== undefined) {
-			query.subject = { $regex: subject, $options: 'i' };
-		}
-
-		ReviewModel.find(query)
+		ReviewModel.find().or(
+			[
+				{ 'name': { $regex: search } },
+				{ 'studentNumber': { $regex: search } },
+				{ 'subject': { $regex: search } }
+			])
 			.then((reviews) => {
 				res.json({ success: true, reviews });
 			})
