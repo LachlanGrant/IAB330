@@ -29,9 +29,9 @@ module.exports = (function () {
 
 		ReviewModel.find().or(
 			[
-				{ 'name': { $regex: search } },
-				{ 'studentNumber': { $regex: search } },
-				{ 'subject': { $regex: search } }
+				{ 'name': { $regex: search, $options: 'i' } },
+				{ 'studentNumber': { $regex: search, $options: 'i' } },
+				{ 'subject': { $regex: search, $options: 'i' } }
 			]).exec((err, results) => {
 				if (err) {
 					res.json({ success: false, message: err.toString() });
