@@ -8,5 +8,7 @@ namespace GroupR.Services
     {
         Task<bool> AddItemAsync(T item);
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
+
+        Task<IEnumerable<T>> SearchItems(String SearchQuery);
     }
 }

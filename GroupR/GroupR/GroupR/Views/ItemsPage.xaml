@@ -13,6 +13,7 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout>
+        <Entry Placeholder="Search Reviews" Text="{Binding SearchQuery}" d:Text="Search" FontSize="Small" x:Name="SearchQueryEntry" TextChanged="SearchQuery_TextChanged"/>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Reviews}"
                 VerticalOptions="FillAndExpand"

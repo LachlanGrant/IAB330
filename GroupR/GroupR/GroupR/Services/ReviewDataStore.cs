@@ -44,7 +44,29 @@ namespace GroupR.Services
             {
                 throw new Exception();
             }
+        }
 
+        public async Task<IEnumerable<Review>> SearchItems(String SearchQuery)
+        {
+            var client = new System.Net.Http.HttpClient();
+            var jsonData = new StringContent(JsonConvert.SerializeObject(new
+            {
+                search = SearchQuery,
+            }), Encoding.UTF8, "application/json");
+
+            var response = await client.PostAsync("https://iab330.rbvea.co/api/reviews/search", jsonData);
+            string responseJSON = await response.Content.ReadAsStringAsync();
+
+            ReviewResponse reviewsResponse = JsonConvert.DeserializeObject<ReviewResponse>(responseJSON);
+
+            if (reviewsResponse.success == true)
+            {
+                return reviewsResponse.reviews;
+            }
+            else
+            {
+                throw new Exception();
+            }
         }
     }
 }

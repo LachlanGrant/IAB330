@@ -15,6 +15,8 @@ namespace GroupR.ViewModels
         public ObservableCollection<Review> Reviews { get; set; }
         public Command LoadItemsCommand { get; set; }
 
+        public String SearchQuery { get; set; }
+
         public ItemsViewModel()
         {
             Title = "Browse Reviews";
@@ -39,11 +41,22 @@ namespace GroupR.ViewModels
             try
             {
                 Reviews.Clear();
-                var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
+                if (SearchQuery == null || SearchQuery == "" || SearchQuery == "Search")
                 {
-                    Reviews.Add(item);
+                    var items = await DataStore.GetItemsAsync(true);
+                    foreach (var item in items)
+                    {
+                        Reviews.Add(item);
+                    }
+                } else
+                {
+                    var items = await DataStore.SearchItems(SearchQuery);
+                    foreach (var item in items)
+                    {
+                        Reviews.Add(item);
+                    }
                 }
+                
             }
             catch (Exception ex)
             {

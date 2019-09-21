@@ -19,12 +19,14 @@ namespace GroupR.Views
     public partial class ItemsPage : ContentPage
     {
         ItemsViewModel viewModel;
+        String SearchQuery;
 
         public ItemsPage()
         {
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
+            SearchQuery = "";
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -50,6 +52,12 @@ namespace GroupR.Views
 
             if (viewModel.Reviews.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
+        }
+
+        private void SearchQuery_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            viewModel.SearchQuery = SearchQueryEntry.Text;
+            viewModel.LoadItemsCommand.Execute(null);
         }
     }
 }
