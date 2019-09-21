@@ -24,7 +24,7 @@ module.exports = (function () {
 			});
 	});
 
-	app.get('/search', multer().none(), (req, res) => {
+	app.post('/search', multer().none(), (req, res) => {
 		const { search } = req.body;
 
 		ReviewModel.find().or(
