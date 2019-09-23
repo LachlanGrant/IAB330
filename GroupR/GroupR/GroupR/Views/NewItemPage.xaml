@@ -22,7 +22,7 @@
                 <Label Text="Subject Code" FontSize="Medium" />
                 <Entry Text="{Binding Item.subject}" d:Text="Subject" FontSize="Small" x:Name="subject"/>
                 <Label Text="Friendliness" FontSize="Medium" />
-                <Picker x:Name="friendlinessPicker" Title="Friendliness" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                <Picker x:Name="friendlinessPicker" Title="Friendliness" SelectedItem="{Binding Item.friendliness, Mode=TwoWay}">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int16}">
                             <x:Int16>1</x:Int16>
@@ -46,7 +46,7 @@
                     </Picker.ItemsSource>
                 </Picker>
                 <Label Text="Work Quality" FontSize="Medium" />
-                <Picker x:Name="workQualityPicker" Title="Work Quality" SelectedItem="{Binding Item.workEthic, Mode=TwoWay}">
+                <Picker x:Name="workQualityPicker" Title="Work Quality" SelectedItem="{Binding Item.workQuality, Mode=TwoWay}">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int16}">
                             <x:Int16>1</x:Int16>

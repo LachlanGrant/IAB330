@@ -18,7 +18,7 @@
         <Label Text="{Binding Item.friendliness}" d:Text="Friendliness" FontSize="Small"/>
         <Label Text="Work Ethic:" FontSize="Medium" />
         <Label Text="{Binding Item.workEthic}" d:Text="Work Ethic" FontSize="Small"/>
-        <Label Text="Friendliness:" FontSize="Medium" />
+        <Label Text="Work Quality:" FontSize="Medium" />
         <Label Text="{Binding Item.workQuality}" d:Text="Work Quality" FontSize="Small"/>
     </StackLayout>
     

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lachlangrant\\source\\repos\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {}
+    "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lachlangrant\\source\\repos\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {
+    "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lachlangrant\\source\\repos\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
+        "projectUniqueName": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
         "projectName": "GroupR",
-        "projectPath": "C:\\Users\\lachlangrant\\source\\repos\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
+        "projectPath": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
         "packagesPath": "C:\\Users\\lachlangrant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lachlangrant\\source\\repos\\GroupR\\GroupR\\GroupR\\obj\\",
+        "outputPath": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -56,10 +56,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
-            },
-            "Xamarin-MaterialSearchBar": {
-              "target": "Package",
-              "version": "[1.1.0.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
