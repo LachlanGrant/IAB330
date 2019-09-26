@@ -29,6 +29,7 @@ module.exports = (function () {
 
 		newUser.save((err, user) => {
 			if (err) {
+				user.password = undefined;
 				res.json({
 					success: false,
 					message: err.toString(),
