@@ -10,12 +10,12 @@ require('custom-env').env(true);
 
 const app = express();
 
-// require('./helpers/database');
+require('./helpers/database');
 
-// app.use(passport.initialize());
-// app.use(passport.session());
+app.use(passport.initialize());
+app.use(passport.session());
 
-// require('./helpers/auth')(passport);
+require('./helpers/auth')(passport);
 
 app.use(
 	body.urlencoded({
