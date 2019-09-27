@@ -24,8 +24,6 @@ app.use(
 );
 app.use(body.json());
 
-app.use(express.static('public'))
-
 require('./routes/routes')(app);
 
 app.listen(8080, () => {

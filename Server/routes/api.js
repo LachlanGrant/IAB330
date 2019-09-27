@@ -34,7 +34,6 @@ module.exports = (function () {
 					message: err.toString(),
 				});
 			} else {
-				user.password = undefined;
 				res.json({
 					success: true,
 					user,

@@ -809,25 +809,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lachlangrant\\.nuget\\packages\\": {},
+    "C:\\Users\\Aliya\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
+      "projectUniqueName": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
       "projectName": "GroupR",
-      "projectPath": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
-      "packagesPath": "C:\\Users\\lachlangrant\\.nuget\\packages\\",
-      "outputPath": "Z:\\Developer\\QUT\\Semester 4\\IAB330 - Mobile App\\Assignment_2\\GroupR\\GroupR\\GroupR\\obj\\",
+      "projectPath": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
+      "packagesPath": "C:\\Users\\Aliya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\lachlangrant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

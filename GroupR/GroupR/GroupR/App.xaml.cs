@@ -4,6 +4,8 @@ using Xamarin.Forms.Xaml;
 using GroupR.Services;
 using GroupR.Views;
 
+using Xamarin.Essentials;
+
 namespace GroupR
 {
     public partial class App : Application
@@ -14,7 +16,17 @@ namespace GroupR
             InitializeComponent();
 
             DependencyService.Register<ReviewDataStore>();
-            MainPage = new MainPage();
+
+            if (Preferences.Get("has_token", false)) //appsettings,getvaluedeafult
+            {
+                MainPage = new MainPage();
+            } else
+            {
+                // Login Page
+                MainPage = new NavigationPage(new SignUpPage());
+            }
+            
+            
         }
 
         protected override void OnStart()
