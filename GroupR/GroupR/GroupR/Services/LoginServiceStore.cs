@@ -24,6 +24,9 @@ namespace GroupR.Services
 
             var response = await client.PostAsync("https://iab330.rbvea.co/api/signup", jsonData);
             string responseJSON = await response.Content.ReadAsStringAsync();
+            Debug.WriteLine(responseJSON);
+
+            //var resp = JsonConvert.DeserializeObject(responseJSON);
 
             UserResponse userResponse = JsonConvert.DeserializeObject<UserResponse>(responseJSON);
 
@@ -31,10 +34,8 @@ namespace GroupR.Services
             {
                 return true;
             }
-            else
-            {
-                throw new Exception();
-            }
+
+            return false;
         }
 
         public async Task<bool> LoginAsync(string username, string password)

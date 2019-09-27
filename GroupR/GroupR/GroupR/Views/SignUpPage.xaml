@@ -16,7 +16,7 @@
                 <Entry Text="{Binding Username}" />
                 <Label Text="Password:" FontSize="Medium" />
                 <Entry Text="{Binding Password}" IsPassword="true" />
-                <Button Command="{Binding RegisterCommand}" Text="Submit"></Button>
+                <Button x:Name="SignupButton" Text="SignUp" Clicked="Signup_Button_Pressed"/>
 
                 <Label Text="{Binding Message}"/>
                 

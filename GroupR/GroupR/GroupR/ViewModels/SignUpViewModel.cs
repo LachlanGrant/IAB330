@@ -3,6 +3,8 @@ using System.Windows.Input;
 using GroupR.Models;
 using Xamarin.Forms;
 using GroupR.Services;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace GroupR.ViewModels
 {
@@ -14,25 +16,19 @@ namespace GroupR.ViewModels
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public string Message { get; set; }
+        public bool signupSuccess { get; set; }
 
-        public ICommand RegisterCommand
+        public async Task ExecuteSignup()
         {
-            get
+            try
             {
-                return new Command(async () =>
-                {
-                    var isSuccess = await registerServices.RegisterAsync(Username, Password);
-
-                    if (isSuccess)
-                    {
-                        Message = "Registered succesfully";
-                    }
-                    else
-                    {
-                        Message = "Registeration failed";
-                    }
-                });
+                var isSuccess = await registerServices.RegisterAsync(Username, Password);
+                Debug.WriteLine(isSuccess.ToString());
+                this.signupSuccess = isSuccess;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
             }
         }
 

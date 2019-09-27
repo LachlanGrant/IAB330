@@ -6,6 +6,7 @@ using Xamarin.Forms.Xaml;
 using GroupR.Models;
 using GroupR.ViewModels;
 using GroupR.Views;
+using System.Diagnostics;
 
 namespace GroupR.Views
 {
@@ -36,9 +37,11 @@ namespace GroupR.Views
             await Navigation.PushAsync(new LogInPage());
         }
 
-        /*    private void OnButtonClicked(object sender, EventArgs e)
-            {
-                Entry.
-            }*/
+        private async void Signup_Button_Pressed(object sender, EventArgs e)
+        {
+            await viewModel.ExecuteSignup();
+            Debug.WriteLine(viewModel.signupSuccess.ToString());
+            // We can now access viewModel.loginSuccess :)
+        }
     }
 }
