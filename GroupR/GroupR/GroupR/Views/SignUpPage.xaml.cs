@@ -42,6 +42,11 @@ namespace GroupR.Views
             await viewModel.ExecuteSignup();
             Debug.WriteLine(viewModel.signupSuccess.ToString());
             // We can now access viewModel.loginSuccess :)
+            if(viewModel.signupSuccess == true)
+            {
+                //if signup is a success, push to browse review screen
+                await Navigation.PushAsync(new LogInPage());
+            }
         }
     }
 }

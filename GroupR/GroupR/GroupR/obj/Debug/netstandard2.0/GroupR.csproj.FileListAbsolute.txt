@@ -34,26 +34,6 @@ Z:/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/Group
 Z:/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/XamlC.stamp
 Z:/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.dll
 Z:/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.pdb
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.deps.json
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.dll
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.pdb
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/App.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/ItemsPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/MenuPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/NewItemPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/SearchPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.csproj.CoreCompileInputs.cache
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.AssemblyInfoInputs.cache
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.AssemblyInfo.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/XamlC.stamp
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.dll
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.pdb
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/SignUpPage.xaml.g.cs
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.csprojAssemblyReference.cache
-C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/Views/LogInPage.xaml.g.cs
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.deps.json
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.dll
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/bin/Debug/netstandard2.0/GroupR.pdb
@@ -73,3 +53,23 @@ C:/Users/Aliya/Desktop/IAB330/IAB330/GroupR/GroupR/GroupR/obj/Debug/netstandard2
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.dll
 /Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/Debug/netstandard2.0/GroupR.pdb
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.deps.json
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.dll
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\bin\Debug\netstandard2.0\GroupR.pdb
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\LogInPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\SearchPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.csproj.CoreCompileInputs.cache
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.AssemblyInfoInputs.cache
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.AssemblyInfo.cs
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.dll
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.pdb
+C:\Users\Aliya\Desktop\IAB330\IAB330\GroupR\GroupR\GroupR\obj\Debug\netstandard2.0\GroupR.csprojAssemblyReference.cache

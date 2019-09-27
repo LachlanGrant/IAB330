@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using GroupR.Services;
 using GroupR.Views;
+using GroupR.Services;
+using System.Diagnostics;
 
 using Xamarin.Essentials;
 
@@ -17,7 +19,11 @@ namespace GroupR
 
             DependencyService.Register<ReviewDataStore>();
 
-            if (Preferences.Get("has_token", false)) //appsettings,getvaluedeafult
+            var token = Preferences.Get("auth_token", "");
+
+            Debug.WriteLine("Debug: " + token);
+
+            if (token != "") 
             {
                 MainPage = new MainPage();
             } else

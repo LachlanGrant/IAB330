@@ -38,7 +38,7 @@ namespace GroupR.Services
             return false;
         }
 
-        public async Task<bool> LoginAsync(string username, string password)
+        public async Task<UserResponse> LoginAsync(string username, string password)
         {
             var client = new System.Net.Http.HttpClient();
 
@@ -58,10 +58,12 @@ namespace GroupR.Services
 
             if (userResponse.Success == true)
             {
-                return true;
+                return userResponse;
             }
-
-            return false;
+            else
+            {
+                throw new Exception();
+            }
         }
     }
 }

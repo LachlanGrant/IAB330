@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GroupR.Views.LogInPage.xaml", "Views/LogInPage.xaml", typeof(global::GroupR.Views.LoginPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GroupR.Views.LogInPage.xaml", "Views/LogInPage.xaml", typeof(global::GroupR.Views.LogInPage))]
 
 namespace GroupR.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LogInPage.xaml")]
-    public partial class LoginPage : global::Xamarin.Forms.ContentPage {
+    public partial class LogInPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button LoginButton;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LogInPage));
+            LoginButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "LoginButton");
         }
     }
 }

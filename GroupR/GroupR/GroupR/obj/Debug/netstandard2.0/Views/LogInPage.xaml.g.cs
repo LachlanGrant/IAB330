@@ -13,7 +13,7 @@
 namespace GroupR.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/LogInPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LogInPage.xaml")]
     public partial class LogInPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

@@ -2,6 +2,7 @@ using System;
 using System.Windows.Input;
 using GroupR.Models;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 using System.Threading.Tasks;
 using GroupR.Services;
 using System.Diagnostics;
@@ -24,7 +25,11 @@ namespace GroupR.ViewModels
             {
                 var isSuccess = await registerServices.LoginAsync(Username, Password);
                 Debug.WriteLine(isSuccess.ToString());
-                this.loginSuccess = isSuccess;
+
+                this.loginSuccess = isSuccess.Success;
+
+                //save token
+                Preferences.Set("auth_token", isSuccess.userToken);
             }
             catch (Exception ex)
             {

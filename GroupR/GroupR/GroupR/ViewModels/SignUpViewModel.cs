@@ -2,7 +2,9 @@ using System;
 using System.Windows.Input;
 using GroupR.Models;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using GroupR.Services;
+using GroupR.Views;
 using System.Threading.Tasks;
 using System.Diagnostics;
 

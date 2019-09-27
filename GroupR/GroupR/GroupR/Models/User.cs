@@ -16,5 +16,7 @@ namespace GroupR.Models
     {
         [JsonProperty("success")]
         public bool Success { get; set; }
+        [JsonProperty("userToken")]
+        public string userToken { get; set; }
     }
 }
