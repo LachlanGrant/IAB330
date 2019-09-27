@@ -16,9 +16,10 @@
                 <Entry Text="{Binding Username}" />
                 <Label Text="Password:" FontSize="Medium" />
                 <Entry Text="{Binding Password}" IsPassword="true" />
-                <Button Command="{Binding LoginCommand}" Text="Submit"></Button>
 
-                <Label Text="{Binding Message}"/>
+                <Button x:Name="LoginButton" Text="Login" Clicked="Login_Button_Pressed"/>
+
+                <Label Text="{Binding message}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

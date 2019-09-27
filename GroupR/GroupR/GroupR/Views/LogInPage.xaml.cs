@@ -6,6 +6,7 @@ using Xamarin.Forms.Xaml;
 using GroupR.Models;
 using GroupR.ViewModels;
 using GroupR.Views;
+using System.Diagnostics;
 
 namespace GroupR.Views
 {
@@ -29,6 +30,13 @@ namespace GroupR.Views
 
             viewModel = new LogInViewModel();
             BindingContext = viewModel;
+        }
+
+        private async void Login_Button_Pressed(object sender, EventArgs e)
+        {
+            await viewModel.ExecuteLogin();
+            Debug.WriteLine(viewModel.loginSuccess.ToString());
+            // We can now access viewModel.loginSuccess :)
         }
     }
 }

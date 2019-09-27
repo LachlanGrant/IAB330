@@ -20,7 +20,7 @@ namespace GroupR.ViewModels
         {
             get
             {
-                return new Command(async() =>
+                return new Command(async () =>
                 {
                     var isSuccess = await registerServices.RegisterAsync(Username, Password);
 

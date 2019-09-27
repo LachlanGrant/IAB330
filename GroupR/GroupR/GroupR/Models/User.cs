@@ -14,6 +14,7 @@ namespace GroupR.Models
 
     public class UserResponse
     {
-        public bool success { get; set; }
+        [JsonProperty("success")]
+        public bool Success { get; set; }
     }
 }

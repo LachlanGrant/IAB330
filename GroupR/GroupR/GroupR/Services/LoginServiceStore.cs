@@ -6,6 +6,7 @@ using GroupR.Models;
 
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace GroupR.Services
 {
@@ -15,24 +16,18 @@ namespace GroupR.Services
         {
             var client = new System.Net.Http.HttpClient();
 
-            var user = new User
+            var jsonData = new StringContent(JsonConvert.SerializeObject(new
             {
-                Username = username,
-                Password = password
-            };
-
-            var jsonData = new StringContent(JsonConvert.SerializeObject(new {
-                username=  username,
-                password= password
-            }
-            ), Encoding.UTF8, "application/json");
+                username = username,
+                password = password,
+            }), Encoding.UTF8, "application/json");
 
             var response = await client.PostAsync("https://iab330.rbvea.co/api/signup", jsonData);
             string responseJSON = await response.Content.ReadAsStringAsync();
 
             UserResponse userResponse = JsonConvert.DeserializeObject<UserResponse>(responseJSON);
 
-            if (userResponse.success == true)
+            if (userResponse.Success == true)
             {
                 return true;
             }
@@ -46,52 +41,26 @@ namespace GroupR.Services
         {
             var client = new System.Net.Http.HttpClient();
 
-            var user = new User
+            var jsonData = new StringContent(JsonConvert.SerializeObject(new
             {
-                Username = username,
-                Password = password
-            };
+                username = username,
+                password = password,
+            }), Encoding.UTF8, "application/json");
 
-            var jsonData = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
-
-            var response = await client.PostAsync("https://iab330.rbvea.co/api/signup", jsonData);
+            var response = await client.PostAsync("https://iab330.rbvea.co/api/token", jsonData);
             string responseJSON = await response.Content.ReadAsStringAsync();
+            Debug.WriteLine(responseJSON);
+
+            //var resp = JsonConvert.DeserializeObject(responseJSON);
 
             UserResponse userResponse = JsonConvert.DeserializeObject<UserResponse>(responseJSON);
 
-            if (userResponse.success == true)
+            if (userResponse.Success == true)
             {
                 return true;
             }
-            else
-            {
-                throw new Exception();
-            }
 
-
+            return false;
         }
-
-/*        public async Task<IEnumerable<Review>> SearchItems(String SearchQuery)
-        {
-            var client = new System.Net.Http.HttpClient();
-            var jsonData = new StringContent(JsonConvert.SerializeObject(new
-            {
-                search = SearchQuery,
-            }), Encoding.UTF8, "application/json");
-
-            var response = await client.PostAsync("https://iab330.rbvea.co/api/reviews/search", jsonData);
-            string responseJSON = await response.Content.ReadAsStringAsync();
-
-            UserResponse userResponse = JsonConvert.DeserializeObject<UserResponse>(responseJSON);
-
-            if (userResponse.success == true)
-            {
-                return reviewsResponse;
-            }
-            else
-            {
-                throw new Exception();
-            }
-        }*/
     }
 }
