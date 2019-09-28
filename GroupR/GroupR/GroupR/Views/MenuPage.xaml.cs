@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -35,6 +36,12 @@ namespace GroupR.Views
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
                 await RootPage.NavigateFromMenu(id);
             };
+        }
+
+        private void Logout_Button_Pressed(object sender, EventArgs e)
+        {
+            Preferences.Remove("auth_token");
+            Application.Current.MainPage = new NavigationPage(new SignUpPage());
         }
     }
 }

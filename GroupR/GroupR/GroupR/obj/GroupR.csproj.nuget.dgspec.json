@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {}
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/GroupR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj": {
+    "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/GroupR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
+        "projectUniqueName": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/GroupR.csproj",
         "projectName": "GroupR",
-        "projectPath": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\GroupR.csproj",
-        "packagesPath": "C:\\Users\\Aliya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aliya\\Desktop\\IAB330\\IAB330\\GroupR\\GroupR\\GroupR\\obj\\",
+        "projectPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/GroupR.csproj",
+        "packagesPath": "/Users/lachlangrant/.nuget/packages/",
+        "outputPath": "/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/GroupR/GroupR/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/lachlangrant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,10 +63,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

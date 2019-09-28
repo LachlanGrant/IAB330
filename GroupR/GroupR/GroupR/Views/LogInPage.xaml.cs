@@ -36,8 +36,6 @@ namespace GroupR.Views
         {
             await viewModel.ExecuteLogin();
             Debug.WriteLine(viewModel.loginSuccess.ToString());
-            // We can now access viewModel.loginSuccess :)
-
         }
     }
 }

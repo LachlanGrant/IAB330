@@ -6,6 +6,7 @@ using Xamarin.Essentials;
 using System.Threading.Tasks;
 using GroupR.Services;
 using System.Diagnostics;
+using GroupR.Views;
 
 namespace GroupR.ViewModels
 {
@@ -30,6 +31,7 @@ namespace GroupR.ViewModels
 
                 //save token
                 Preferences.Set("auth_token", isSuccess.userToken);
+                Application.Current.MainPage = new MainPage();
             }
             catch (Exception ex)
             {
