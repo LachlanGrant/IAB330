@@ -38,9 +38,11 @@ namespace GroupR.Views
             };
         }
 
-        private void Logout_Button_Pressed(object sender, EventArgs e)
+        private async System.Threading.Tasks.Task Logout_Button_PressedAsync(object sender, EventArgs e)
         {
             Preferences.Remove("auth_token");
+            await DisplayAlert("You're now logged out",
+                                   "", "Continue");
             Application.Current.MainPage = new NavigationPage(new SignUpPage());
         }
     }
