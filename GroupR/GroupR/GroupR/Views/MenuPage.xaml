@@ -26,7 +26,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="LogoutButton" Text="Logout" Clicked="Logout_Button_Pressed"/>
+        <Button Margin="0,10,0,0" Text="Logout"
+                        Clicked="Logout_Button_Pressed"
+                        BackgroundColor="#2196F3"
+                        TextColor="White" />
     </StackLayout>
 
 </ContentPage>
