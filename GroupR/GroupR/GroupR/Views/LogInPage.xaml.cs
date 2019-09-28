@@ -36,6 +36,11 @@ namespace GroupR.Views
         {
             await viewModel.ExecuteLogin();
             Debug.WriteLine(viewModel.loginSuccess.ToString());
+            if (viewModel.loginSuccess == false)
+            {
+                await DisplayAlert("Unable to login",
+                                   "Please check the details you provided and try again.", "Close");
+            }
         }
     }
 }

@@ -45,7 +45,13 @@ namespace GroupR.Views
             if(viewModel.signupSuccess == true)
             {
                 //if signup is a success, push to browse review screen
+                await DisplayAlert("Successfully created account",
+                                   "You can now sign in!", "Continue");
                 await Navigation.PushAsync(new LogInPage());
+            } else
+            {
+                await DisplayAlert("Error",
+                                   "Unable to create account, please try another username", "Close");
             }
         }
     }
