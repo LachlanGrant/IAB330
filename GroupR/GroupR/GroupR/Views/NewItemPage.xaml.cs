@@ -40,6 +40,15 @@ namespace GroupR.Views
 
         async void Cancel_Clicked(object sender, EventArgs e)
         {
+            Item = new Review
+            {
+                friendliness = 1,
+                workEthic = 1,
+                workQuality = 1,
+                name = "",
+                studentNumber = "",
+                subject = ""
+            };
             await Navigation.PopModalAsync();
         }
     }
