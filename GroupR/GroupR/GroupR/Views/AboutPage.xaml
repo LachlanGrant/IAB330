@@ -33,7 +33,7 @@
                             <FormattedString.Spans>
                                 <Span Text="GroupR" FontAttributes="Bold" FontSize="22" />
                                 <Span Text=" " />
-                                <Span Text="0.1 - MVP" ForegroundColor="{StaticResource LightTextColor}" />
+                                <Span Text="1.0 - Final Submission" ForegroundColor="{StaticResource LightTextColor}" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
