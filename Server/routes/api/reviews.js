@@ -27,37 +27,48 @@ module.exports = (function () {
 	app.post('/search', multer().none(), (req, res) => {
 		const { search } = req.body;
 
-		ReviewModel.find().or(
-			[
-				{ 'name': { $regex: search, $options: 'i' } },
-				{ 'studentNumber': { $regex: search, $options: 'i' } },
-				{ 'subject': { $regex: search, $options: 'i' } }
-			]).exec((err, results) => {
+		ReviewModel.find()
+			.populate('user')
+			.or(
+				[
+					{ 'name': { $regex: search, $options: 'i' } },
+					{ 'studentNumber': { $regex: search, $options: 'i' } },
+					{ 'subject': { $regex: search, $options: 'i' } }
+				])
+			.exec((err, results) => {
 				if (err) {
 					res.json({ success: false, message: err.toString() });
 				} else {
+					results.forEach((item) => { if (item.user) { item.user.password = undefined; } });
 					res.json({ success: true, reviews: results });
 				}
 			});
 	});
 
 	app.post('/create', multer().none(), (req, res) => {
-		const { name, friendliness, workEthic, workQuality, studentNumber, subject } = req.body;
+		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
 
-		let newReview = new ReviewModel({
-			name,
-			friendliness,
-			workEthic,
-			workQuality,
-			studentNumber,
-			subject,
-		});
+		UserModel.find({ username }).then((user) => {
+			if (user) {
+				let newReview = new ReviewModel({
+					name,
+					friendliness,
+					workEthic,
+					workQuality,
+					studentNumber,
+					subject,
+					user: user._id,
+				});
 
-		newReview.save().then(() => {
-			res.json({ success: true });
+				newReview.save().then(() => {
+					res.json({ success: true });
+				}).catch((error) => { throw error; });
+			} else {
+				throw new Error("No user found");
+			}
 		}).catch((err) => {
 			res.json({ success: false, message: err.toString().replace("Error: ", "") });
-		})
+		});
 	});
 
 	return app;

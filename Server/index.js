@@ -29,3 +29,16 @@ require('./routes/routes')(app);
 app.listen(8080, () => {
 	console.log("Running");
 });
+
+const UserModel = require('./models/user');
+const ReviewModel = require('./models/review');
+
+UserModel.findOne({ username: "lachlangrant" }).then((user) => {
+	ReviewModel.find().then((reviews) => {
+		reviews.forEach((review) => {
+			review.user = user;
+			console.log(`Updating Review ${review.name}`);
+			review.save();
+		});
+	});
+});
