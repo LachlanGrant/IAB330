@@ -1,0 +1,14 @@
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/UnitTests.dll
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/UnitTests.pdb
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/nunit.framework.dll
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/nunit.framework.pdb
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/nunit.framework.xml
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/obj/Debug/UnitTests.csprojAssemblyReference.cache
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/obj/Debug/UnitTests.csproj.CopyComplete
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/obj/Debug/UnitTests.dll
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/obj/Debug/UnitTests.pdb
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/GroupR.dll
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/GroupR.pdb
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/GroupR.dll.mdb
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/Newtonsoft.Json.dll
+/Users/lachlangrant/Developer/QUT/Semester 4/IAB330 - Mobile App/Assignment_2/GroupR/UnitTests/bin/Debug/Newtonsoft.Json.xml
