@@ -60,11 +60,8 @@ module.exports = (function () {
 	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
 		UserModel.findOne({ username: username }).then((foundUser) => {
-			console.log(foundUser);
 			if (foundUser) {
-				console.log("Creating Review");
 				let user = foundUser._id;
-				console.log(`UserID: ${user}`);
 				let newReview = new ReviewModel({
 					user: user,
 					name,
@@ -74,7 +71,6 @@ module.exports = (function () {
 					studentNumber,
 					subject,
 				});
-				console.log(newReview);
 				newReview.save().then(() => {
 					res.json({ success: true });
 				}).catch((err) => {
