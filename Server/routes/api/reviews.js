@@ -59,7 +59,7 @@ module.exports = (function () {
 
 	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
-		UserModel.find({ username }).then((foundUser) => {
+		UserModel.findOne({ username: username }).then((foundUser) => {
 			console.log(foundUser);
 			if (foundUser) {
 				console.log("Creating Review");
