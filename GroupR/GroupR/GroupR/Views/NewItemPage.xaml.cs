@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using GroupR.Models;
+using Xamarin.Essentials;
 
 namespace GroupR.Views
 {
@@ -19,6 +20,10 @@ namespace GroupR.Views
         {
             InitializeComponent();
 
+            ReviewUser user = new ReviewUser();
+
+            user.username = Preferences.Get("username", "");
+
             Item = new Review
             {
                 friendliness = 1,
@@ -26,7 +31,8 @@ namespace GroupR.Views
                 workQuality = 1,
                 name = "",
                 studentNumber = "",
-                subject = ""
+                subject = "",
+                user = user
             };
 
             BindingContext = this;
@@ -47,7 +53,8 @@ namespace GroupR.Views
                 workQuality = 1,
                 name = "",
                 studentNumber = "",
-                subject = ""
+                subject = "",
+                user = null
             };
             await Navigation.PopModalAsync();
         }
