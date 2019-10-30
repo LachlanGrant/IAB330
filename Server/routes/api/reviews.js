@@ -69,7 +69,7 @@ module.exports = (function () {
 					workQuality,
 					studentNumber,
 					subject,
-					user: user._id,
+					user: user,
 				});
 
 				newReview.save().then(() => {
