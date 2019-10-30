@@ -19,10 +19,11 @@ module.exports = (function () {
 		ReviewModel.find()
 			.populate('user')
 			.then((reviews) => {
-				reviews.forEach((review) => {
+				reviews.forEach((review, idx) => {
 					if (review.user) {
 						review.user.password = undefined;
 						review.reviewerName = review.user.username;
+						reviews[idx] = review;
 					}
 				});
 				res.json({ success: true, reviews });
@@ -46,10 +47,11 @@ module.exports = (function () {
 				if (err) {
 					res.json({ success: false, message: err.toString() });
 				} else {
-					results.forEach((item) => {
-						if (item.user) {
-							item.user.password = undefined;
-							item.reviewerName = item.user.username;
+					results.forEach((review, idx) => {
+						if (review.user) {
+							review.user.password = undefined;
+							review.reviewerName = review.user.username;
+							results[idx] = review;
 						}
 					});
 					res.json({ success: true, reviews: results });
