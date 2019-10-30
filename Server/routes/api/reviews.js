@@ -17,7 +17,13 @@ module.exports = (function () {
 
 	app.get('/', multer().none(), (req, res) => {
 		ReviewModel.find()
+			.populate('user')
 			.then((reviews) => {
+				reviews.forEach((review) => {
+					if (review.user) {
+						review.user.password = undefined;
+					}
+				});
 				res.json({ success: true, reviews });
 			}).catch((err) => {
 				res.json({ success: false, message: err.toString().replace("Error: ", "") });
