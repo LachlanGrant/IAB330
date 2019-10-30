@@ -59,7 +59,6 @@ module.exports = (function () {
 
 	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
-		console.log(req.body);
 		UserModel.find({ username }).then((user) => {
 			console.log(user);
 			if (user) {
@@ -73,7 +72,7 @@ module.exports = (function () {
 					subject,
 					user: user._id,
 				});
-
+				console.log(newReview);
 				newReview.save().then(() => {
 					res.json({ success: true });
 				}).catch((err) => {
