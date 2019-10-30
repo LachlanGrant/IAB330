@@ -59,7 +59,7 @@ module.exports = (function () {
 
 	app.post('/create', multer().none(), (req, res) => {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
-
+		console.log(req.body);
 		UserModel.find({ username }).then((user) => {
 			if (user) {
 				let newReview = new ReviewModel({
