@@ -31,7 +31,7 @@ namespace GroupR.Views
                 name = "Item 1",
                 workQuality = 5,
                 workEthic = 5,
-                friendliness = 5
+                friendliness = 5,
             };
 
             viewModel = new ItemDetailViewModel(item);

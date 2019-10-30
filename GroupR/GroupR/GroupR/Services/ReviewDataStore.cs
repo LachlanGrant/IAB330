@@ -6,6 +6,7 @@ using GroupR.Models;
 
 using System.Net.Http;
 using Newtonsoft.Json;
+using Xamarin.Essentials;
 
 namespace GroupR.Services
 {
@@ -15,14 +16,14 @@ namespace GroupR.Services
         {
             var client = new System.Net.Http.HttpClient();
 
-            StringContent jsonData = new StringContent(ReviewToJSON(item), Encoding.UTF8, "application/json"); ;
+            StringContent jsonData = new StringContent(ReviewToJSON(item, Preferences.Get("username", "")), Encoding.UTF8, "application/json");
 
             var response = await client.PostAsync("https://iab330.rbvea.co/api/reviews/create", jsonData);
 
             return true;
         }
 
-        public static String ReviewToJSON(Review item)
+        public static String ReviewToJSON(Review item, String uname)
         {
             return JsonConvert.SerializeObject(new
             {
@@ -32,6 +33,7 @@ namespace GroupR.Services
                 friendliness = item.friendliness,
                 studentNumber = item.studentNumber,
                 subject = item.subject,
+                username = uname,
             });
         }
 
@@ -54,6 +56,7 @@ namespace GroupR.Services
 
         public static ReviewResponse JSONtoReviews(String json)
         {
+            Console.WriteLine(json);
             return JsonConvert.DeserializeObject<ReviewResponse>(json);
         }
 

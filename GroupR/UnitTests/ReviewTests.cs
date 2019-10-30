@@ -14,6 +14,9 @@ namespace UnitTests
         [Test()]
         public void TestReviewConstructor()
         {
+            ReviewUser user = new ReviewUser();
+            user.username = "lachlangrant";
+
             Review Item = new Review
             {
                 friendliness = 2,
@@ -21,7 +24,8 @@ namespace UnitTests
                 workQuality = 4,
                 name = "Example Student",
                 studentNumber = "n123456789",
-                subject = "IAB330"
+                subject = "IAB330",
+                user = user
             };
 
             Assert.AreEqual(2, Item.friendliness, 2);
@@ -30,6 +34,7 @@ namespace UnitTests
             Assert.AreEqual("Example Student", Item.name);
             Assert.AreEqual("n123456789", Item.studentNumber);
             Assert.AreEqual("IAB330", Item.subject);
+            Assert.AreEqual("lachlangrant", Item.user.username);
         }
 
         [Test()]
@@ -44,8 +49,7 @@ namespace UnitTests
                 studentNumber = "n123456789",
                 subject = "IAB330"
             };
-
-            Assert.AreEqual(ReviewDataStore.ReviewToJSON(Item), "{\"name\":\"Example Student\",\"workEthic\":3,\"workQuality\":4,\"friendliness\":2,\"studentNumber\":\"n123456789\",\"subject\":\"IAB330\"}");
+            Assert.AreEqual(ReviewDataStore.ReviewToJSON(Item, "lachlangrant"), "{\"name\":\"Example Student\",\"workEthic\":3,\"workQuality\":4,\"friendliness\":2,\"studentNumber\":\"n123456789\",\"subject\":\"IAB330\",\"username\":\"lachlangrant\"}");
         }
 
         [Test()]
@@ -79,11 +83,7 @@ namespace UnitTests
             }
 
             Assert.AreEqual("Person", Reviews[0].name);
-            Assert.AreEqual("10233", Reviews[1].studentNumber);
-            Assert.AreEqual(1, Reviews[2].friendliness);
-            Assert.AreEqual(3, Reviews[3].workEthic);
-            Assert.AreEqual(5, Reviews[4].workQuality);
-            Assert.AreEqual("f101", Reviews[5].subject);
+            Assert.AreEqual("N123456789", Reviews[0].studentNumber);
         }
 
         [Test()]
@@ -91,7 +91,7 @@ namespace UnitTests
         {
             ReviewDataStore ds = new ReviewDataStore();
 
-            IEnumerable<Review> searchTask = await ds.SearchItems("Different Person");
+            IEnumerable<Review> searchTask = await ds.SearchItems("Person");
 
             List<Review> Reviews = new List<Review>();
 
@@ -100,7 +100,7 @@ namespace UnitTests
                 Reviews.Add(item);
             }
 
-            Assert.AreEqual("Different Person", Reviews[0].name);
+            Assert.AreEqual("Person", Reviews[0].name);
         }
     }
 }

@@ -31,6 +31,7 @@ namespace GroupR.ViewModels
 
                 //save token
                 Preferences.Set("auth_token", isSuccess.userToken);
+                Preferences.Set("username", Username);
                 Application.Current.MainPage = new MainPage();
             }
             catch (Exception ex)

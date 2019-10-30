@@ -20,10 +20,11 @@ namespace GroupR
             DependencyService.Register<ReviewDataStore>();
 
             var token = Preferences.Get("auth_token", "");
+            var username = Preferences.Get("username", "");
 
             Debug.WriteLine("Debug: " + token);
 
-            if (token != "") 
+            if (token != "" && username != "") 
             {
                 MainPage = new MainPage();
             } else
