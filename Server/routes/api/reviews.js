@@ -63,10 +63,10 @@ module.exports = (function () {
 			console.log(foundUser);
 			if (foundUser) {
 				console.log("Creating Review");
-				let user = foundUser['_id'];
+				let user = foundUser;
 				console.log(`UserID: ${user}`);
 				let newReview = new ReviewModel({
-					user,
+					user: user,
 					name,
 					friendliness,
 					workEthic,
