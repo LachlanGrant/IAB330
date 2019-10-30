@@ -69,12 +69,12 @@ module.exports = (function () {
 					workQuality,
 					studentNumber,
 					subject,
-					user: user,
+					user: user._id,
 				});
 
 				newReview.save().then(() => {
 					res.json({ success: true });
-				}).catch((error) => { throw error; });
+				}).catch((err) => { res.json({ success: false, message: err.toString().replace("Error: ", "") }); });
 			} else {
 				throw new Error("No user found");
 			}
