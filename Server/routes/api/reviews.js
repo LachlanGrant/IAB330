@@ -61,7 +61,9 @@ module.exports = (function () {
 		const { name, friendliness, workEthic, workQuality, studentNumber, subject, username } = req.body;
 		console.log(req.body);
 		UserModel.find({ username }).then((user) => {
+			console.log(user);
 			if (user) {
+				console.log("Creating Review");
 				let newReview = new ReviewModel({
 					name,
 					friendliness,
@@ -74,11 +76,15 @@ module.exports = (function () {
 
 				newReview.save().then(() => {
 					res.json({ success: true });
-				}).catch((err) => { res.json({ success: false, message: err.toString().replace("Error: ", "") }); });
+				}).catch((err) => {
+					console.error(err);
+					res.json({ success: false, message: err.toString().replace("Error: ", "") });
+				});
 			} else {
 				throw new Error("No user found");
 			}
 		}).catch((err) => {
+			console.error(err);
 			res.json({ success: false, message: err.toString().replace("Error: ", "") });
 		});
 	});
