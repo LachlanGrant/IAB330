@@ -22,6 +22,7 @@ module.exports = (function () {
 				reviews.forEach((review) => {
 					if (review.user) {
 						review.user.password = undefined;
+						review.reviewerName = review.user.username;
 					}
 				});
 				res.json({ success: true, reviews });
@@ -45,7 +46,12 @@ module.exports = (function () {
 				if (err) {
 					res.json({ success: false, message: err.toString() });
 				} else {
-					results.forEach((item) => { if (item.user) { item.user.password = undefined; } });
+					results.forEach((item) => {
+						if (item.user) {
+							item.user.password = undefined;
+							item.reviewerName = item.user.username;
+						}
+					});
 					res.json({ success: true, reviews: results });
 				}
 			});
