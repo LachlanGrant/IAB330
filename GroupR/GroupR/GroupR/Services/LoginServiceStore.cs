@@ -12,7 +12,7 @@ using Xamarin.Essentials;
 
 namespace GroupR.Services
 {
-    public class LoginServiceStore 
+    public class LoginServiceStore
     {
         public async Task<bool> RegisterAsync(string username, string password)
         {
@@ -66,6 +66,20 @@ namespace GroupR.Services
             {
                 throw new Exception();
             }
+        }
+        public static String UserToJSON(User user)
+        {
+            return JsonConvert.SerializeObject(new
+            {
+                username = user.Username,
+                password = user.Password
+            });
+        }
+
+        public static UserResponse JSONtoUser(String json)
+        {
+            Console.WriteLine(json);
+            return JsonConvert.DeserializeObject<ReviewResponse>(json);
         }
     }
 }
