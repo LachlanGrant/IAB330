@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
 using GroupR.Models;
 using GroupR.Services;
@@ -12,22 +12,23 @@ namespace UnitTests
     public class AuthenticationTests
     {
         [Test()]
-        public void TestRegisterUser()
+        public async Task TestRegisterUserAsync()
         {
-            LoginServiceStore registerServices = new LoginServiceStore(); 
+            LoginServiceStore registerServices = new LoginServiceStore();
 
             User user = new User();
 
             user.Username = "lachlangrant";
             user.Password = "lachlanpassword";
 
-            Assert.IsTrue(registerServices.RegisterAysnc(user.Username, user.Password));
+            var result = await registerServices.RegisterAsync(user.Username, user.Password);
+            Assert.IsTrue(result);
         }
 
         [Test()]
-        public void TestLoginUser()
+        public async Task TestLoginUserAsync()
         {
-            LoginServiceStore loginServices = new LoginServiceStore(); 
+            LoginServiceStore loginServices = new LoginServiceStore();
 
             User user = new User();
 
@@ -37,7 +38,7 @@ namespace UnitTests
             var isSuccess = await loginServices.LoginAsync(user.Username, user.Password);
 
             Assert.IsTrue(isSuccess.Success);
-           
+
         }
 
     }

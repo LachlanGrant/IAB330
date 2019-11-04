@@ -6,7 +6,7 @@ using GroupR.Models;
 
 using System.Net.Http;
 using Newtonsoft.Json;
-//using System.Diagnostics;
+using System.Diagnostics;
 
 using Xamarin.Essentials;
 
