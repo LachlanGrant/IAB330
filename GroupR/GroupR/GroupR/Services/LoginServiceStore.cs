@@ -6,11 +6,13 @@ using GroupR.Models;
 
 using System.Net.Http;
 using Newtonsoft.Json;
-using System.Diagnostics;
+//using System.Diagnostics;
+
+using Xamarin.Essentials;
 
 namespace GroupR.Services
 {
-    class LoginServiceStore 
+    public class LoginServiceStore 
     {
         public async Task<bool> RegisterAsync(string username, string password)
         {
